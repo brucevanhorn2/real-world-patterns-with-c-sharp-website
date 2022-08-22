@@ -8,7 +8,8 @@ const carouselText = [
     {text: "force you switch to JavaScript.", color: "orange"},
     {text: "compel you to become a long haul trucker.", color: "orange"},
     {text: "cause you to seek psychological help.", color: "orange"},
-    {text: "make you cry in your beer / milk / soft drink.", color: "orange"},
+    {text: "make you cry in your energy drink.", color: "orange"},
+    {text: "make you feel like a total poser.", color: "orange"},
     {text: "lead to general malaise.", color: "orange"},
     {text: "bring about a state of utter depression.", color: "orange"},
 ]

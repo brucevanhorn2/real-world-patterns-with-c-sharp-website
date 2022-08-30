@@ -12,6 +12,7 @@ const carouselText = [
     {text: "make you feel like a total poser.", color: "orange"},
     {text: "lead to general malaise.", color: "orange"},
     {text: "bring about a state of utter depression.", color: "orange"},
+    {text: "lead you to make GoF voodoo dolls.", color: "orange"},
 ]
 
 $( document ).ready(async function() {

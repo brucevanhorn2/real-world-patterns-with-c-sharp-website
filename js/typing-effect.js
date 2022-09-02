@@ -5,21 +5,18 @@ const carouselText = [
     {text: "cause your head to explode.", color: "orange"},
     {text: "make you question your career choice.", color: "orange"},
     {text: "lead to a broken heart.", color: "orange"},
-    {text: "force you switch to JavaScript.", color: "orange"},
+    {text: "force you switch to SmallTalk.", color: "orange"},
     {text: "compel you to become a long haul trucker.", color: "orange"},
-    {text: "cause you to seek psychological help.", color: "orange"},
     {text: "make you cry in your energy drink.", color: "orange"},
     {text: "make you feel like a total poser.", color: "orange"},
-    {text: "lead to general malaise.", color: "orange"},
-    {text: "bring about a state of utter depression.", color: "orange"},
-    {text: "lead you to make GoF voodoo dolls.", color: "orange"},
+    {text: "tempt you to make GoF voodoo dolls.", color: "orange"},
 ]
 
 $( document ).ready(async function() {
     carousel(carouselText, "#feature-text")
 });
 
-async function typeSentence(sentence, eleRef, delay = 100) {
+async function typeSentence(sentence, eleRef, delay = 50) {
     const letters = sentence.split("");
     let i = 0;
     while(i < letters.length) {

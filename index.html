@@ -1,288 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./css/typing-effect.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/typing-effect.css" />
     <title>Real World Implementation of C# Design Patterns</title>
-</head>
-<body>
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </a>
-    </div>
+      </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item">
-                Home
-            </a>
-            <a class="navbar-item">
-                The Book
-            </a>
-            <a class="navbar-item">
-                Patterns
-            </a>
-            <a class="navbar-item">
-                Art Gallery
-            </a>
-            <a class="navbar-item">
-                The Team
-            </a>
+          <a class="navbar-item"> Home </a>
+          <a class="navbar-item"> The Book </a>
+          <a class="navbar-item"> Patterns </a>
+          <a class="navbar-item"> Art Gallery </a>
+          <a class="navbar-item"> The Team </a>
         </div>
 
         <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Get Notified When the Book is Published</strong>
-                    </a>
-                </div>
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button" style="background-color: orange">
+                <strong>Get Notified When the Book is Published</strong>
+              </a>
             </div>
+          </div>
         </div>
-    </div>
-</nav>
-<section class="section container">
-    <div class="columns is-mobile is-centered">
+      </div>
+    </nav>
+    <section class="section container">
+      <div class="columns is-mobile is-centered">
         <h1 class="title" style="text-align: center">
-            <span class="sentence">Finally, a book on software design patterns that won't</span><br />
-            <span id="sentence" class="sentence"></span>
-            <span id="feature-text"></span>
-            <span class="input-cursor">|</span>
+          <span class="sentence"
+            >Finally, a book on software design patterns that won't</span
+          ><br />
+          <span id="sentence" class="sentence"></span>
+          <span id="feature-text"></span>
+          <span class="input-cursor">|</span>
         </h1>
-    </div>
-</section>
-<section class="section container">
-
-    <div class="columns is-mobile is-centered">
+      </div>
+    </section>
+    <section class="section container">
+      <div class="columns is-mobile is-centered">
         <div class="column is-one-third">
-            <figure class="image is-4by5">
-                <img src="./img/cover-idea.png">
-            </figure>
+          <figure class="image is-4by5">
+            <img src="./img/cover-idea.png" />
+          </figure>
         </div>
-        <div class="column" style="margin:20px;">
-            <h1 class="title is-1" style="margin-bottom:60px;">Real World Implementation of C# Design Patterns </h1>
-            <h2 class="subtitle is-3" style="margin-bottom:80px;">Solve Daily Programming Challenges Using Elements of Reusable Object-Oriented Software </h2>
-            <h3 class="title is-3">by Bruce M. Van Horn II</h3>
-            <p>(Actual cover might not look like this)</p>
-            
+        <div class="column" style="margin: 20px">
+          <h1 class="title is-1" style="margin-bottom: 60px">
+            Real World Implementation of C# Design Patterns
+          </h1>
+          <h2 class="subtitle is-3" style="margin-bottom: 80px">
+            Solve Daily Programming Challenges Using Elements of Reusable
+            Object-Oriented Software
+          </h2>
+          <h3 class="title is-3">by Bruce M. Van Horn II</h3>
+          <p>(Actual cover might not look like this)</p>
         </div>
-    </div>
-
-</section>
-<section class="section" style="background-color: #211d1e">
-    <div class="columns is-mobile is-centered">
+      </div>
+    </section>
+    <section class="section" style="background-color: #211d1e">
+      <div class="columns is-mobile is-centered">
         <div class="container">
-            <div class="column is-full" style="color: white;" >
-                <p class="sentence title is-3" style="color:#f69423;">Ready to become a better C# devloper?</p><br />
-                <p>Design patterns are a collection of best practices.  They aren’t software, or tools, or code, but more of a collection of wisdom on solving common sets of problems in object oriented design and programming.
-                </p>
-                <p>Software development as a profession has been around for 50 years now.  As an industry, we’re pretty good at teaching new languages, but we also need to learn programming paradigms and how to leverage patterns as both a communications tool and as an advantage when designing well written, easily maintainable code.
-                </p>
-                <p>Developers working with C# will be able to put their knowledge to work with this practical guide to design patterns. The book provides a hands-on approach to implementation and associated methodologies that will have you up-and-running, and productive in no time.
-                </p>
-                <p>Complete with step-by-step explanations of essential concepts, practical examples and self-assessment questions, you will begin by exploring some what patterns are, how to leverage them in your daily work, and even how to recognize and correct for anti-patterns that invariably work their way into our projects.
-                </p>
-                <p>You’ll learn to recognize solutions to common problems in software design with C# that come up time and again regardless of where you work or what industry you serve.  Rather than an academic treatment that you’ll find in “classic” books on this topic, we’ll be exploring real-world applications of design patterns that you can use in your everyday work.
-                </p>
-                <p>By the end of this book, you’ll be able to recognize situations where you are tempted to reinvent the wheel, and quickly avoid the time and cost associated with solving problems that are common, well understood, with battle tested, and proven design patterns.
-                </p>
-                <p>… and you do it with CLASS!  And sometimes interfaces.
-                </p>
+          <div class="column is-full" style="color: white">
+            <p class="sentence title is-3" style="color: #f69423">
+              Ready to become a better C# devloper?
+            </p>
+            <br />
+            <p>
+              Design patterns are a collection of best practices. They aren’t
+              software, or tools, or code, but more of a collection of wisdom on
+              solving common sets of problems in object oriented design and
+              programming.
+            </p>
+            <p>
+              Software development as a profession has been around for 50 years
+              now. As an industry, we’re pretty good at teaching new languages,
+              but we also need to learn programming paradigms and how to
+              leverage patterns as both a communications tool and as an
+              advantage when designing well written, easily maintainable code.
+            </p>
+            <p>
+              Developers working with C# will be able to put their knowledge to
+              work with this practical guide to design patterns. The book
+              provides a hands-on approach to implementation and associated
+              methodologies that will have you up-and-running, and productive in
+              no time.
+            </p>
+            <p>
+              Complete with step-by-step explanations of essential concepts,
+              practical examples and self-assessment questions, you will begin
+              by exploring some what patterns are, how to leverage them in your
+              daily work, and even how to recognize and correct for
+              anti-patterns that invariably work their way into our projects.
+            </p>
+            <p>
+              You’ll learn to recognize solutions to common problems in software
+              design with C# that come up time and again regardless of where you
+              work or what industry you serve. Rather than an academic treatment
+              that you’ll find in “classic” books on this topic, we’ll be
+              exploring real-world applications of design patterns that you can
+              use in your everyday work.
+            </p>
+            <p>
+              By the end of this book, you’ll be able to recognize situations
+              where you are tempted to reinvent the wheel, and quickly avoid the
+              time and cost associated with solving problems that are common,
+              well understood, with battle tested, and proven design patterns.
+            </p>
+            <p>… and you do it with CLASS! And sometimes interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
+        <div class="hero-body">
+          <p class="title">
+            Meet Kitty and Phoebe
+          </p>
+          <p class="subtitle">
+            and the team at Bumble Bikes Inc.
+          </p>
+        </div>
+      </section>
+    <section class="section" style="background-color: rgb(206, 24, 173)">
+      <div class="columns is-mobile is-centered">
+        <div class="container">
+          <div class="column is-full">
+            <div class="container">
+              <div class="column is-full">
+                <p class="title is-3" style="color: #211d1e">
+                    Meet Kitty and Phoebe: two sisters with a dream...
+                  </p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="section" style="background-color: rgb(137, 137, 137)">
-    <div class="columns is-mobile is-centered">
+    <section class="section" style="background-color: rgb(182, 181, 181)">
+      <div class="columns is-mobile is-centered">
         <div class="container">
-            <div class="column is-full" >
-                <div class="container">
-                    <div class="column is-full" style="color: white;" >
-                        <p class="sentence title is-3" style="color:#211d1e;">The Most Important Patterns You'll Use Every Day</p><br />
-                        <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Simple Factory</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Factory Method</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Abstract Factory</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Builder</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                           
-                          </div>
-                          <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Object Pool</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Singleton</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Decorator</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Facade</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                           
-                          </div>
-                          <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Composite</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Bridge</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Command</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Observer</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                           
-                          </div>
-                          <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
-                            <div class="column is-one-quarter">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Iterator</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            <div class="column is-one-quarter">
-                                <article class="message">
-                                    <div class="message-header">
-                                      <p>Strategy</p>
-                                    </div>
-                                    <div class="message-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    </div>
-                                  </article>
-                            </div>
-                            
-                           
-                          </div>
-                    </div>
+          <div class="column is-full">
+            <div class="container">
+              <div class="column is-full">
+                <p class="title is-3" style="color: #211d1e">
+                  Learn to avoid anitpatterns you might recognize
+                </p>
+                <p>
+                  Naturally, we're not talking about YOUR code. But sometimes
+                  code built by smart people with good intentions succumbs to a
+                  set of forces that lead to total chaos. Learn to recognize
+                  these destructive forces at work in your projects by studying
+                  a few common antipatterns.
+                </p>
+                <div
+                  class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+                >
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Big Ball of Mud</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-mud-4901805.svg" />
+                        </figure>
+                        <p>
+                          All code starts off the best feasible design. Without
+                          patterns, devolution is inevitable.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Code Pasta</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-spaghetti-1507970.svg" />
+                        </figure>
+                        <p>
+                          These code pasta dishes that will always lead to
+                          indegestion.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Golden Hammer</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-hammer-3932760.svg" />
+                        </figure>
+                        <p>
+                          When someone hands you a new hammer, everything looks
+                          like a nail.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<footer class="has-text-white bottom" style="background-color: #f69423">
-    <div class="container is-fluid">
-        <div class="columns">
-            <div class="column">
-                <p>Bruce Van Horn II</p>
+    <section class="section" style="background-color: orange">
+      <div class="columns is-mobile is-centered">
+        <div class="container">
+          <div class="column is-full">
+            <div class="container">
+              <div class="column is-full">
+                <p class="title is-3" style="color: #211d1e">
+                  Master the most important patterns you'll use every day
+                </p>
+                <p>
+                  There are a lot of software architecture and design patterns
+                  out there. Should you learn them all? CAN you learn them all?
+                  Woulding it be nice if we had a list of the most important
+                  patterns explained in plain English with real-world
+                  applications and code?
+                </p>
+                <h5 class="title is-5">
+                  Now there is! Here are the patterns you'll learn:
+                </h5>
+                <div
+                  class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+                >
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Simple Factory</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-factory-1588897.svg" />
+                        </figure>
+                        <p>
+                          Not really a pattern, but many developers think it is.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Factory Method</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-industrial-1511913.svg" />
+                        </figure>
+                        <p>This is the most widely used factory pattern.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Abstract Factory</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-factory-1108261.svg" />
+                        </figure>
+                        <p>
+                          Don't confuse this with neo-classical expressionist
+                          factories.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Builder</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-builder-682769.svg" />
+                        </figure>
+                        <p>
+                          Rome could have been built in a day with this pattern.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div
+                  class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+                >
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Object ool</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-pool-947493.svg" />
+                        </figure>
+                        <p>
+                          There's no 'P' in the Object ool. Let's keep it that
+                          way.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Singleton</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/singleton.svg" />
+                        </figure>
+                        <p>There can be only one. But one is all you need.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Decorator</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            src="./img/noun-christmas-ornament-1412988.svg"
+                          />
+                        </figure>
+                        <p>
+                          Don't confuse this with neo-classical expressionist
+                          factories.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Façade</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-castle-5099143.svg" />
+                        </figure>
+                        <p>
+                          It's a code castle on the outside but its a code
+                          trailer park on the inside.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div
+                  class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+                >
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Composite</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-folder-tree-846313.svg" />
+                        </figure>
+                        <p>
+                          Use recursion on your object graphs by using
+                          recursion.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Bridge</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-bridge-932128.svg" />
+                        </figure>
+                        <p>
+                          Manage complexity between two related object graphs.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Command</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-megaphone-39209.svg" />
+                        </figure>
+                        <p>Package and send your commands like a boss.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Observer</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-observatory-4716354.svg" />
+                        </figure>
+                        <p>See object. See object run. Now do something.</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div
+                  class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+                >
+                  <div class="column is-one-quarter">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Iterator</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-loop-4823842.svg" />
+                        </figure>
+                        <p>
+                          It never eats. It never sleeps. It just keeps going.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column is-one-quarter">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>Strategy</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img src="./img/noun-strategy-2421612.svg" />
+                        </figure>
+                        <p>Action without strategy is a nightmare.</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="column has-text-right">
-                <i class="fa fa-facebook-square"></i>
-                <i class="fa fa-twitter-square"></i>
-                <i class="fa fa-google-plus-square"></i>
-                <i class="fa fa-linkedin-square"></i>
-            </div>
+          </div>
         </div>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/2924de3341.js" crossorigin="anonymous"></script>
-<script src="./js/typing-effect.js"></script>
-</body>
+      </div>
+    </section>
+    <footer class="has-text-white bottom" style="background-color: black">
+      <div class="container is-fluid">
+        <div class="columns">
+          <div class="column">
+            <p>Bruce Van Horn II</p>
+          </div>
+          <div class="column has-text-right">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-google-plus-square"></i>
+            <i class="fa fa-linkedin-square"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2924de3341.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/typing-effect.js"></script>
+  </body>
 </html>

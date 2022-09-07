@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="94ccdf79-8cd5-4750-becb-51a816b0db1b" name="DO Production" url="http://csharppatterns.dev">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="137.184.104.86" port="22" sshConfigId="57d6c471-d5d7-43d5-86d9-d0b6c56a615e" sshConfig="root@137.184.104.86:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

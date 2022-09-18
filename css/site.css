@@ -1,0 +1,12 @@
+.patternDescription {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.socialIcons {
+    color: white;
+}
+
+.socialIcons:hover {
+    color: orange;
+}

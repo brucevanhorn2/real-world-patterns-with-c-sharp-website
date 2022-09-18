@@ -11,7 +11,7 @@
     <title>Real World Implementation of C# Design Patterns</title>
 </head>
 <body>
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a
       role="button"
@@ -29,23 +29,13 @@
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item"> Home </a>
-      <a class="navbar-item"> The Book </a>
       <a class="navbar-item"> Patterns </a>
       <a class="navbar-item"> Art Gallery </a>
-      <a class="navbar-item"> The Team </a>
+      <a class="navbar-item"> About the Author </a>
     </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button" style="background-color: orange">
-            <strong>Get Notified When the Book is Published</strong>
-          </a>
-        </div>
-      </div>
-    </div>
   </div>
-</nav> -->
+</nav>
 <section class="section container">
     <div class="columns is-centered">
         <h1 class="title is-2">Coming soon to only the finest purveyors of technical books</h1>
@@ -69,7 +59,7 @@
     <div class="columns is-mobile is-centered">
         <div class="column is-one-third">
             <figure class="image is-4by5">
-                <img src="./img/cover-idea.png"/>
+                <img alt="A picture of the cover of the book.  It's all shiny and black with an abstract purple box thingy.  Whatever, it's cool so go get the book already." src="./img/actual-cover.png"/>
             </figure>
         </div>
         <div class="column" style="margin: 20px">
@@ -81,7 +71,7 @@
                 Object-Oriented Software
             </h2>
             <h3 class="title is-3">by Bruce M. Van Horn II</h3>
-            <p>(Actual cover might not look like this)</p>
+            <h3 class="title is-3">with illustrations by the author</h3>
         </div>
     </div>
 </section>
@@ -89,7 +79,7 @@
     <div class="columns is-mobile is-centered">
         <!-- <div class="container"> -->
         <div class="column is-one-quarter">
-            <img src="./img/phoebe-aha-lab-coat.webp"/>
+            <img alt="Phoebe, one of the characters in the book, standing in her lab coat saying AHA!" src="./img/phoebe-aha-lab-coat.webp"/>
         </div>
         <div class="column is-three-quarters" style="color: white">
             <p class="title is-3" style="color: #f69423">
@@ -137,7 +127,7 @@
                 wheel, and quickly avoid the time and cost associated with solving problems that are common, well
                 understood, with battle tested, and proven design patterns.
             </p>
-            <p>… and you do it with CLASS! And sometimes interfaces.</p>
+            <p>You'll wield patterns with confidence and you do it with CLASS! And sometimes interfaces.</p>
         </div>
     </div>
 
@@ -145,10 +135,11 @@
 <section class="section" style="background-color: #ffffff">
     <div class="columns is-mobile is-centered content">
         <div class="column">
-            <img style="width:50%;" src="./img/professor-not-appearing-in-this-book-4.png"/>
-            <p class="title is-3" style="color: #000000">
+			<p class="title is-3" style="color: #000000">
                 This is not the way to learn about design patterns!
             </p>
+            <img style="width:50%;" atl="picture of an old fuddy-duddy CS prof standing with an ancient computer" src="./img/professor-not-appearing-in-this-book-4.png"/>
+            
             <p class="title is-4">Most books on patterns have one or more problems:</p>
             <div class="block">
                 <ol>
@@ -185,44 +176,28 @@
 
 
         </div>
-
+	</div>
 
 </section>
-<!-- <section class="section" style="background-color: rgb(206, 24, 173)">
-  <div class="columns is-mobile is-centered">
-    <div class="container">
-      <div class="column is-full">
-        <div class="container">
-          <div class="column is-full">
-            <p class="title is-3" style="color: #211d1e">
-                Meet Kitty and Phoebe: two sisters with a dream...
-              </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
-<section class="section" style="background-color: rgb(182, 181, 181)">
+<section class="section" style="background-color: #211d1e">
     <div class="columns is-mobile is-centered">
-        <div class="container">
-            <div class="column is-full">
-                <div class="container">
-                    <div class="column is-full">
-                        <p class="title is-3" style="color: #211d1e">
-                            Learn to avoid anitpatterns you might recognize
-                        </p>
-                        <p>
-                            Naturally, we're not talking about YOUR code. But sometimes
-                            code built by smart people with good intentions succumbs to a
-                            set of forces that lead to total chaos. Learn to recognize
-                            these destructive forces at work in your projects by studying
-                            a few common antipatterns.
-                        </p>
-                        <div
-                                class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
-                        >
+        <!-- <div class="container"> -->
+        
+        <div class="column is-three-quarters" style="color: white">
+            <p class="title is-3" style="color: #f69423">
+                This is not the way to create quality software that stands the test of time!
+			</p>
+			<p class="title is-4" style="color: #F69423">
+		      (but it is what most software developers actually do)
+			</p>
+            <br/>
+            <p class="block">
+            This book focuses entirely on reality, warts and all.  It presents the story of two sisters, Kitty and Phoebe, who create a tech startup aimed at building the finest bicycles the world has ever seen.  The girls are not professional software developers, so they have to learn as they go.&nbsp; They have business objectives and very real competitive pressures just like you do.&nbsp; Left to their own devices, their code will turn into a big ball of mud on a plate of spaghetti.&nbsp;&nbsp;</p>
+            <p class="block">
+          We start off with some anti-patterns:  those practices everybody does because either they're lazy, or they're under extreme pressure to ship before the code is ready.&nbsp; These conditions can be corrected with regular refactoring and code reviews, but they usually aren't.&nbsp; Even if your code starts out clean and shiny, there are&nbsp;</p>
+			
+            <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
                             <div class="column">
                                 <article class="message">
                                     <div class="message-header">
@@ -230,15 +205,15 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-mud-4901805.svg"/>
+                                            <img alt="icon for big ball of mud" src="./img/noun-mud-4901805.svg"/>
                                         </figure>
                                         <p>
-                                            All code starts off the best feasible design. Without
+                                            All code starts off with the best feasible design. Without
                                             patterns, devolution is inevitable.
                                         </p>
                                     </div>
                                 </article>
-                            </div>
+              </div>
                             <div class="column">
                                 <article class="message">
                                     <div class="message-header">
@@ -271,8 +246,26 @@
                                     </div>
                                 </article>
                             </div>
-                        </div>
-                    </div>
+          </div>
+      </div>
+	  <div class="column is-one-quarter">
+	      <img src="img/the-boss-1.png" alt="The evil pointy haired boss who makes you ship your software without testing it first." />
+	  </div>
+  </div>
+	
+</section>
+<section class="section" style="background-color: rgb(182, 181, 181)">
+    <div class="columns is-mobile is-centered">
+        <div class="container">
+            <div class="column is-full">
+                <div class="container">
+                    <div class="column is-full">
+                        <p class="title is-3" style="color: #211d1e">
+                      Prepare yourself to transform the way you write code. </p>
+                        <p>
+                      Good code never happens by accident. Learning patterns without learning the best design practices will not yield good results.&nbsp; After we cover antipatterns, we talk about <strong>SOLID</strong>.<strong>&nbsp; </strong>SOLID represents a set of design techniques that help you create flexible object class structures.&nbsp;</p>
+                        
+                  </div>
                 </div>
             </div>
         </div>
@@ -298,9 +291,7 @@
                         <h5 class="title is-5">
                             Now there is! Here are the patterns you'll learn:
                         </h5>
-                        <div
-                                class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
-                        >
+                        <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
                             <div class="column">
                                 <article class="message">
                                     <div class="message-header">
@@ -308,7 +299,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-factory-1588897.svg"/>
+                                            <img alt="Simple Factory" src="./img/noun-factory-1588897.svg"/>
                                         </figure>
                                         <p>
                                             Not really a pattern, but many developers think it is.
@@ -323,7 +314,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-industrial-1511913.svg"/>
+                                            <img alt="The Factory Method Pattern" src="./img/noun-industrial-1511913.svg"/>
                                         </figure>
                                         <p>This is the most widely used factory pattern.</p>
                                     </div>
@@ -336,7 +327,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-factory-1108261.svg"/>
+                                            <img alt="Abstract Factory Pattern" src="./img/noun-factory-1108261.svg"/>
                                         </figure>
                                         <p>
                                             Don't confuse this with neo-classical expressionist
@@ -352,7 +343,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-builder-682769.svg"/>
+                                            <img alt="Builder Pattern" src="./img/noun-builder-682769.svg"/>
                                         </figure>
                                         <p>
                                             Rome could have been built in a day with this pattern.
@@ -367,15 +358,14 @@
                             <div class="column">
                                 <article class="message">
                                     <div class="message-header">
-                                        <p>Object ool</p>
+                                        <p>Object Pool</p>
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-pool-947493.svg"/>
+                                            <img alt="Object Pool Pattern" src="./img/noun-pool-947493.svg"/>
                                         </figure>
                                         <p>
-                                            There's no 'P' in the Object ool. Let's keep it that
-                                            way.
+                                            When objects are costly to instantiate, make yourself a pool.
                                         </p>
                                     </div>
                                 </article>
@@ -387,7 +377,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/singleton.svg"/>
+                                            <img alt="The Singleton Pattern" src="./img/singleton.svg"/>
                                         </figure>
                                         <p>There can be only one. But one is all you need.</p>
                                     </div>
@@ -400,9 +390,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img
-                                                    src="./img/noun-christmas-ornament-1412988.svg"
-                                            />
+                                            <img alt="Decorator pattern" src="./img/noun-christmas-ornament-1412988.svg"/>
                                         </figure>
                                         <p>
                                             It's like behavioral bling for closed classes.
@@ -417,7 +405,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-castle-5099143.svg"/>
+                                            <img alt="the Facade Pattern" src="./img/noun-castle-5099143.svg"/>
                                         </figure>
                                         <p>
                                             Code castle on the outside, code
@@ -437,7 +425,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-folder-tree-846313.svg"/>
+                                            <img alt="Composite Pattern" src="./img/noun-folder-tree-846313.svg"/>
                                         </figure>
                                         <p>
                                             Use recursion on your object graphs by using
@@ -453,7 +441,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-bridge-932128.svg"/>
+                                            <img alt="The bridge pattern" src="./img/noun-bridge-932128.svg"/>
                                         </figure>
                                         <p>
                                             Manage complexity between two related object graphs.
@@ -468,7 +456,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-megaphone-39209.svg"/>
+                                            <img alt="Command Pattern" src="./img/noun-megaphone-39209.svg"/>
                                         </figure>
                                         <p>Package and send your commands like a boss.</p>
                                     </div>
@@ -481,7 +469,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-observatory-4716354.svg"/>
+                                            <img alt="Observer Pattern" src="./img/noun-observatory-4716354.svg"/>
                                         </figure>
                                         <p>See object. See object run. Now do something.</p>
                                     </div>
@@ -498,7 +486,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-loop-4823842.svg"/>
+                                            <img alt="Iterator Pattern" src="./img/noun-loop-4823842.svg"/>
                                         </figure>
                                         <p>
                                             It never eats. It never sleeps. It just keeps going.
@@ -513,7 +501,7 @@
                                     </div>
                                     <div class="message-body">
                                         <figure class="image is-3by2">
-                                            <img src="./img/noun-strategy-2421612.svg"/>
+                                            <img alt="Strategy Pattern" src="./img/noun-strategy-2421612.svg"/>
                                         </figure>
                                         <p>Action without strategy is a nightmare.</p>
                                     </div>
@@ -547,5 +535,9 @@
         crossorigin="anonymous"
 ></script>
 <script src="./js/typing-effect.js"></script>
+<!-- Begin Constant Contact Active Forms -->
+<script> var _ctct_m = "35443a52a38303dc164cd0e13efc8a32"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms -->
 </body>
 </html>

@@ -10,3 +10,20 @@
 .socialIcons:hover {
     color: orange;
 }
+
+.patternSubtitle {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.bigLetter{
+    font-size: 48px;
+    
+}
+
+.bigLetterBox{
+    text-align: center;
+    border: 3px solid black;
+    max-width: 240px;
+    max-height: 180px;;
+}

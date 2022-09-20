@@ -75,7 +75,7 @@
         </div>
     </div>
 </section>
-<section class="section" style="background-color: #211d1e">
+<section id="intro-section" class="section" style="background-color: #211d1e">
     <div class="columns is-mobile is-centered">
         <!-- <div class="container"> -->
         <div class="column is-one-quarter">
@@ -132,7 +132,7 @@
     </div>
 
 </section>
-<section class="section" style="background-color: #ffffff">
+<section id="professor-section" class="section" style="background-color: #ffffff">
     <div class="columns is-mobile is-centered content">
         <div class="column">
 			<p class="title is-3" style="color: #000000">
@@ -180,7 +180,7 @@
 
 </section>
 
-<section class="section" style="background-color: #211d1e">
+<section id="antipatterns-section" class="section" style="background-color: #211d1e">
     <div class="columns is-mobile is-centered">
         <!-- <div class="container"> -->
         
@@ -254,25 +254,96 @@
   </div>
 	
 </section>
-<section class="section" style="background-color: rgb(182, 181, 181)">
+<section id="solid-section" class="section" style="background-color: rgb(182, 181, 181)">
     <div class="columns is-mobile is-centered">
         <div class="container">
             <div class="column is-full">
                 <div class="container">
                     <div class="column is-full">
                         <p class="title is-3" style="color: #211d1e">
-                      Prepare yourself to transform the way you write code. </p>
-                        <p>
-                      Good code never happens by accident. Learning patterns without learning the best design practices will not yield good results.&nbsp; After we cover antipatterns, we talk about <strong>SOLID</strong>.<strong>&nbsp; </strong>SOLID represents a set of design techniques that help you create flexible object class structures.&nbsp;</p>
-                        
+                          Prepare yourself to transform the way you write code. 
+                        </p>
+                        <p class="patternSubtitle">Good code never happens by accident. Learning patterns without learning the best design practices will not yield good results.&nbsp; After we cover antipatterns, we talk about <strong>SOLID</strong>.<strong>&nbsp; </strong>SOLID represents a set of design techniques that help you create flexible object class structures.&nbsp;</p>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="box bigLetterBox">
+                                    <span class="bigLetter">S</span>
+                                    <p class="patternDescription">Single Responsibility Principle</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="box bigLetterBox">
+                                    <span class="bigLetter">O</span>
+                                    <p class="patternDescription">Open-Closed <br/>Principle</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="box bigLetterBox">
+                                    <span class="bigLetter">L</span>
+                                    <p class="patternDescription">Liskov <br />Substitution</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="box bigLetterBox">
+                                    <span class="bigLetter">I</span>
+                                    <p class="patternDescription">Interface Segregation Principle</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="box bigLetterBox">
+                                    <span class="bigLetter">D</span>
+                                    <p class="patternDescription">Dependency Inversion Principle</p>
+                                </div>
+                            </div>
+                          </div>
                   </div>
+                  <p class="title is-5 patternDescription">Not sure what these are?  Read Chapter 2!  Each principle is explained in detail.  Examples are included that show you how to break the rules, and later, how to use them. After that, SOLID is used to make every example including a full project in Chapter 7.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<section class="section" style="background-color: orange">
+<section id="hero-section" class="section"  style="background-color: #211d1e">
+    <div class="columns is-mobile is-centered">        
+        
+        <div class="column is-half" style="color: white">
+            <h1 class="title is-3" style="color: #f69423">
+                Meet the heroes!
+            </h1>
+            <h4 class="title is-4" style="color:lightgray;">
+                The following story is fictitious
+            </h4>
+            <p class="block">
+                Any resemblance to actual persons, alive or dead, is a mere coincidence (and a real shame!).
+            </p>
+            <p class="block">
+                Meet Kitty and Phoebe – Texas-born sisters who share a love for riding bicycles. Phoebe is studying 
+                engineering at Southern Methodist University, a private university in the sisters’ hometown of Dallas, 
+                Texas. Kitty is studying industrial design at Sul Ross University in the town of Alpine located in west 
+                Texas. Purely through kismet, they both won a summer internship at MegaBikeCorp, a large multi-national 
+                bicycle manufacturing company. 
+            </p>
+            <p class="block">
+                After three months of big-company bureacracy, the girls decided they could do better.  Kitty designs
+                a new line of incredibly innovative bicycles.  Her sister has the idea to create an automated robotic
+                assembly line.  The sisters find two abandoned warehouses; one in Dallas, the other in the city of
+                Alpine. The two set up shop with the help of their father's credit card.
+            </p>
+            <p class="block">
+                Throughout the story, the sisters are working on building the software systems that will control their
+                robotic manufacturing facilities.  You'll be working alongside them, learning as they do, and occasionally
+                making mistakes, and then correcting them.
+            </p>
+            <p class="title is-5 block" style="color:white;">
+                This is the most fun you'll have reading a technical book.
+            </p>
+        </div>
+        <div class="column is-half">
+            <img  alt="Phoebe, one of the characters in the book, standing in her lab coat saying AHA!" src="./img/kitty-and-phoebe-bikes-robots.png"/>
+        </div>
+    </div>
+</section>
+<section id="pattern-list" class="section" style="background-color: orange">
     <div class="columns is-mobile is-centered">
         <div class="container">
             <div class="column is-full">
@@ -281,16 +352,11 @@
                         <p class="title is-3" style="color: #211d1e">
                             Master the most important patterns you'll use every day
                         </p>
-                        <p>
-                            There are a lot of software architecture and design patterns
-                            out there. Should you learn them all? CAN you learn them all?
-                            Woulding it be nice if we had a list of the most important
-                            patterns explained in plain English with real-world
-                            applications and code?
+                        <p class="patternSubtitle">
+                            Chapter 3 through 6 describe what I believe are the most useful patterns
+                            useful to every day, real-world projects in C#. 
                         </p>
-                        <h5 class="title is-5">
-                            Now there is! Here are the patterns you'll learn:
-                        </h5>
+                        
                         <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
                             <div class="column">
                                 <article class="message">
@@ -513,6 +579,33 @@
             </div>
         </div>
     </div>
+</section>
+<section id="chapter-7-8" class="section" style="background-color: #211d1e">
+    <div class="columns is-mobile is-centered">
+        <!-- <div class="container"> -->
+        
+        <div class="column is-three-quarters" style="color: white">
+            <p class="title is-3" style="color: #f69423">
+                Chapters 7 & 8:  PLOT TWIST!
+			</p>
+			<p class="title is-4" style="color: #F69423">
+                The plot of our story takes a dire turn and the heroic sisters must find away to adapt so they can save their family and their business.
+			</p>
+            <br/>
+            <p class="block">
+                In the real world, your business needs to be able to pivot on a dime to capture new markets and new opportunities.  If your software architecture isn't resilient and flexible, you could miss out.
+            </p>
+            <p class="block">
+                That's all we're going to say!  No spoilers!
+            </p>
+			
+            
+      </div>
+	  <div class="column is-one-quarter">
+	      <img src="img/tracked-chair-red.png" alt="What the heck is that thing?  Read Chapter 7 to find out." />
+	  </div>
+  </div>
+	
 </section>
 <footer class="has-text-white bottom" style="background-color: black">
     <div class="container is-fluid">

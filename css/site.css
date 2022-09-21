@@ -27,3 +27,7 @@
     max-width: 240px;
     max-height: 180px;;
 }
+
+.modal-close{
+    background-color: #F69423;
+}

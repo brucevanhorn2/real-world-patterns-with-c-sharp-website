@@ -31,3 +31,7 @@
 .modal-close{
     background-color: #F69423;
 }
+
+.modal-content{
+    width:75%;
+}

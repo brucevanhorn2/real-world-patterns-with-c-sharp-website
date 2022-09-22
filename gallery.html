@@ -8,6 +8,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <link rel="stylesheet" href="./css/site.css" />
     <title>Gallery</title>
 </head>
 <body class="container">
@@ -36,11 +37,22 @@
         </div>
       </nav>
       <section class="content">
-      <h1 class="title is-h1">Coming Soon!  Some artwork from the book</h1>
+      <h1 class="title is-h1">Some artwork from the book</h1>
       <p>I have dabbled in computer generated graphics for over 20 years.  It is one of my favorite pasttimes.
          I made quite a few images, though most were UML diagrams.  Those that weren't, I created with Daz Studio.</p>
 
       <p>The book was published in black and white, so I wanted to present the images in color since I worked hard on producing them.</p>
+      </section>
+      <section id="big-image-modal">
+        <div class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <p class="image is-19">
+              <img id="big-image" src="https://bulma.io/images/placeholders/1280x960.png" alt="the image you selected">
+            </p>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
       </section>
       <section>
         <div class="columns">
@@ -48,7 +60,7 @@
                 <div class="card">
                     <div class="card-image">
                       <figure class="image is-16by9">
-                        <img src="/img/big-ball-of-mud-golden-hammer-1280.png" alt="Placeholder image">
+                        <img data-name="big-ball-of-mud-golden-hammer.png" src="/img/big-ball-of-mud-golden-hammer-1280.png" alt="Placeholder image">
                       </figure>
                     </div>
                     <div class="card-content">
@@ -69,7 +81,7 @@
                 <div class="card">
                     <div class="card-image">
                       <figure class="image is-16by0">
-                        <img src="/img/meet-k-and-p-1280.png" alt="Placeholder image">
+                        <img data-name="meet-k-and-p.png" src="/img/meet-k-and-p-1280.png" alt="Placeholder image">
                       </figure>
                     </div>
                     <div class="card-content">
@@ -90,7 +102,7 @@
                 <div class="card">
                     <div class="card-image">
                       <figure class="image is-16by9">
-                        <img src="/img/kitty-and-phoebe-full-factory-pose-no-dof-1920.png" alt="Placeholder image">
+                        <img data-name="kitty-and-phoebe-full-factory-pose-no-dof.png" src="/img/kitty-and-phoebe-full-factory-pose-no-dof-1920.png" alt="Placeholder image">
                       </figure>
                     </div>
                     <div class="card-content">
@@ -102,14 +114,33 @@
                   
                       <div class="content">
                         It was actually useful to produce these images because I felt like I really built the factory I was writing about.  This allowed me to include details both in the story and the code.
-
-
                       </div>
                     </div>
                   </div>
             </div>
           </div>
       </section>
-      
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+      <script type="text/javascript">
+        $( document ).ready(function() {
+            // button handler for the modal
+            $(".image").on("click", function(event){
+              const target = event.target;
+              if(target.getAttribute("data-name")){
+                $("#big-image").attr("src", './img/' + target.getAttribute("data-name"));
+                $(".modal").addClass("is-active");
+              }
+            });
+
+            $(".modal-close").click(function(){
+                $(".modal").removeClass("is-active");
+            });
+
+            $(".modal-background").click(function(){
+                $(".modal").removeClass("is-active");
+            });
+        });
+        
+      </script>
 </body>
 </html>

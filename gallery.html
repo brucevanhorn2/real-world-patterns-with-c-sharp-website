@@ -1,212 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./css/site.css" />
     <title>Gallery</title>
-</head>
-<body class="container">
+  </head>
+  <body class="container">
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Home </a>
+          <a class="navbar-item" href="gallery.html"> Art Gallery </a>
+          <a class="navbar-item" href="author-bio.html"> About the Author </a>
         </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="index.html"> Home </a>
-            <a class="navbar-item" href="gallery.html"> Art Gallery </a>
-            <a class="navbar-item" href="author-bio.html"> About the Author </a>
-          </div>
-      
-        </div>
-      </nav>
-      <section class="content">
+      </div>
+    </nav>
+    <section class="content">
       <h1 class="title is-h1">Some artwork from the book</h1>
-      <p>I have dabbled in computer generated graphics for over 20 years.  It is one of my favorite pasttimes.
-         I made quite a few images, though most were UML diagrams.  Those that weren't, I created with Daz Studio.</p>
+      <p>
+        I have dabbled in computer generated graphics for over 20 years. It is
+        one of my favorite pasttimes. I made quite a few images, though most
+        were UML diagrams. Those that weren't, I created with Daz Studio.
+      </p>
 
-      <p>The book was published in black and white, so I wanted to present the images in color since I worked hard on producing them.</p>
-      </section>
-      <section id="big-image-modal">
-        <div class="modal">
-          <div class="modal-background"></div>
-          <div class="modal-content">
-            <p class="image is-19">
-              <img id="big-image" src="https://bulma.io/images/placeholders/1280x960.png" alt="the image you selected">
-            </p>
-          </div>
-          <button class="modal-close is-large" aria-label="close"></button>
+      <p>
+        The book was published in black and white, so I wanted to present the
+        images in color since I worked hard on producing them.
+      </p>
+    </section>
+    <section id="big-image-modal">
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image is-19">
+            <img
+              id="big-image"
+              src="https://bulma.io/images/placeholders/1280x960.png"
+              alt="the image you selected"
+            />
+          </p>
         </div>
-      </section>
-      <section>
-        <div class="columns">
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-16by9">
-                        <img data-name="big-ball-of-mud-golden-hammer.png" src="/img/big-ball-of-mud-golden-hammer-1280.png" alt="Placeholder image">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-4">There's a big ball of mud on your plate of spaghetti</p>
-                        </div>
-                      </div>
-                  
-                      <div class="content">
-                        This image was inspired by the title of the first chapter.  I wanted a nerdy guy complaining that his code had degenerated into a big ball of mud and was nothing but spaghettie code.  In the original renders, the hammer isn't really gold, since the print is black and white; you wouldn't be able to tell.  I made this one gold just for y'all!
-                        <br>
-                      </div>
-                    </div>
-                  </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+    </section>
+    <section>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img
+                  data-name="big-ball-of-mud-golden-hammer.png"
+                  src="/img/big-ball-of-mud-golden-hammer-1280.png"
+                  alt="Placeholder image"
+                />
+              </figure>
             </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-16by0">
-                        <img data-name="meet-k-and-p.png" src="/img/meet-k-and-p-1280.png" alt="Placeholder image">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-4">An early rendering of bikes and robots</p>
-                        </div>
-                      </div>
-                  
-                      <div class="content">
-                        <p>I was originally going to use my grandparents as the heroes, but decided my girls would make for more colorful characters.  Here we see Kitty on her Palo Duro Canyon Ranger, and Phoebe with her ever-present wrench alongside one of the early model robot arms.</p><p>The hands are all wrong because I quit working on it.  I quit working on it because the real Phoebe didn't like her character's haircut.  It took weeks to create one that met with her approval.</p>
-                        <br>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-16by9">
-                        <img data-name="kitty-and-phoebe-full-factory-pose-no-dof.png" src="/img/kitty-and-phoebe-full-factory-pose-no-dof-1920.png" alt="The bike factory by the end of Chapter 5">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-4">The robotic factory by the end of Chapter 5</p>
-                        </div>
-                      </div>
-                  
-                      <div class="content">
-                        It was actually useful to produce these images because I felt like I really built the factory I was writing about.  This allowed me to include details both in the story and the code.
-                      </div>
-                    </div>
-                  </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    There's a big ball of mud on your plate of spaghetti
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                This image was inspired by the title of the first chapter. I
+                wanted a nerdy guy complaining that his code had degenerated
+                into a big ball of mud and was nothing but spaghettie code. In
+                the original renders, the hammer isn't really gold, since the
+                print is black and white; you wouldn't be able to tell. I made
+                this one gold just for y'all!
+                <br />
+              </div>
             </div>
           </div>
-      </section>
-      <section>
-        <div class="columns">
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-16by9">
-                        <img data-name="bumblebikes-lab.png" src="/img/bumblebikes-lab.png" alt="Phoebe's lab">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-4">Phoebe's Lab</p>
-                        </div>
-                      </div>
-                  
-                      <div class="content">
-                        This is a shot of one end of Phoebe's lab.  Unfortunately you can't see the Van de Graff generator from here.  We still don't know why she has that.
-                        <br>
-                      </div>
-                    </div>
-                  </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by0">
+                <img
+                  data-name="meet-k-and-p.png"
+                  src="/img/meet-k-and-p-1280.png"
+                  alt="Placeholder image"
+                />
+              </figure>
             </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-16by0">
-                        <img data-name="part-3-version-2.png" src="/img/part-3-version-2.png" alt="The lab with Tom, Kitty, and Phoebe working on the project in Chapter 7">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-4">Kitty, Phoebe, and Tom working on the project.</p>
-                        </div>
-                      </div>
-                  
-                      <div class="content">
-                        <p>Same shot of Phoebe's lab, but with Tom, Kitty, and Phoebe working.  This one almost didn't happen.  My video card (an RTX 3070ti) isn't really up to the task.  Maybe if y'all buy a few books, I can upgrade to a 3090.</p>
-                        <br>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-16by9">
-                        <img data-name="zombie--ancient-cat-girl.png" src="/img/zombie--ancient-cat-girl.png" alt="Zombie, ancient monster, cat, and helpless little girl">
-                      </figure>
-                    </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-content">
-                          <p class="title is-4">Zombie, Ancient Monster, Cat, and Helpless Girl</p>
-                        </div>
-                      </div>
-                  
-                      <div class="content">
-                        The worst video game of all time presented in Appendix 1.  I'm begging you!  Please let us never speak of this again.
-                      </div>
-                    </div>
-                  </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    An early rendering of bikes and robots
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p>
+                  I was originally going to use my grandparents as the heroes,
+                  but decided my girls would make for more colorful characters.
+                  Here we see Kitty on her Palo Duro Canyon Ranger, and Phoebe
+                  with her ever-present wrench alongside one of the early model
+                  robot arms.
+                </p>
+                <p>
+                  The hands are all wrong because I quit working on it. I quit
+                  working on it because the real Phoebe didn't like her
+                  character's haircut. It took weeks to create one that met with
+                  her approval.
+                </p>
+                <br />
+              </div>
             </div>
           </div>
-      </section>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-      <script type="text/javascript">
-        $( document ).ready(function() {
-            // button handler for the modal
-            $(".image").on("click", function(event){
-              const target = event.target;
-              if(target.getAttribute("data-name")){
-                $("#big-image").attr("src", './img/' + target.getAttribute("data-name"));
-                $(".modal").addClass("is-active");
-              }
-            });
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img
+                  data-name="kitty-and-phoebe-full-factory-pose-no-dof.png"
+                  src="/img/kitty-and-phoebe-full-factory-pose-no-dof-1920.png"
+                  alt="The bike factory by the end of Chapter 5"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    The robotic factory by the end of Chapter 5
+                  </p>
+                </div>
+              </div>
 
-            $(".modal-close").click(function(){
-                $(".modal").removeClass("is-active");
-            });
+              <div class="content">
+                It was actually useful to produce these images because I felt
+                like I really built the factory I was writing about. This
+                allowed me to include details both in the story and the code.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img
+                  data-name="bumblebikes-lab.png"
+                  src="/img/bumblebikes-lab.png"
+                  alt="Phoebe's lab"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Phoebe's Lab</p>
+                </div>
+              </div>
 
-            $(".modal-background").click(function(){
-                $(".modal").removeClass("is-active");
-            });
+              <div class="content">
+                This is a shot of one end of Phoebe's lab. Unfortunately you
+                can't see the Van de Graff generator from here. We still don't
+                know why she has that.
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by0">
+                <img
+                  data-name="part-3-version-2.png"
+                  src="/img/part-3-version-2.png"
+                  alt="The lab with Tom, Kitty, and Phoebe working on the project in Chapter 7"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Kitty, Phoebe, and Tom working on the project.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p>
+                  Same shot of Phoebe's lab, but with Tom, Kitty, and Phoebe
+                  working. This one almost didn't happen. My video card (an RTX
+                  3070ti) isn't really up to the task. Maybe if y'all buy a few
+                  books, I can upgrade to a 3090.
+                </p>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img
+                  data-name="zombie--ancient-cat-girl.png"
+                  src="/img/zombie--ancient-cat-girl.png"
+                  alt="Zombie, ancient monster, cat, and helpless little girl"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Zombie, Ancient Monster, Cat, and Helpless Girl
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                The worst video game of all time presented in Appendix 1. I'm
+                begging you! Please let us never speak of this again.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // button handler for the modal
+        $(".image").on("click", function (event) {
+          const target = event.target;
+          if (target.getAttribute("data-name")) {
+            $("#big-image").attr(
+              "src",
+              "./img/" + target.getAttribute("data-name")
+            );
+            $(".modal").addClass("is-active");
+          }
         });
-        
-      </script>
-</body>
+
+        $(".modal-close").click(function () {
+          $(".modal").removeClass("is-active");
+        });
+
+        $(".modal-background").click(function () {
+          $(".modal").removeClass("is-active");
+        });
+      });
+    </script>
+  </body>
 </html>

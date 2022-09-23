@@ -1,37 +1,36 @@
 .patternDescription {
-    margin-top: 16px;
-    margin-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .socialIcons {
-    color: white;
+  color: white;
 }
 
 .socialIcons:hover {
-    color: orange;
+  color: orange;
 }
 
 .patternSubtitle {
-    margin-top: 16px;
-    margin-bottom: 48px;
+  margin-top: 16px;
+  margin-bottom: 48px;
 }
 
-.bigLetter{
-    font-size: 48px;
-    
+.bigLetter {
+  font-size: 48px;
 }
 
-.bigLetterBox{
-    text-align: center;
-    border: 3px solid black;
-    max-width: 240px;
-    max-height: 180px;;
+.bigLetterBox {
+  text-align: center;
+  border: 3px solid black;
+  max-width: 240px;
+  max-height: 180px;
 }
 
-.modal-close{
-    background-color: #F69423;
+.modal-close {
+  background-color: #f69423;
 }
 
-.modal-content{
-    width:75%;
+.modal-content {
+  width: 75%;
 }

@@ -34,3 +34,7 @@
 .modal-content {
   width: 75%;
 }
+
+.message-body {
+  min-height: 270px;
+}

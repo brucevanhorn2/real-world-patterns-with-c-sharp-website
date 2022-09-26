@@ -34,3 +34,7 @@
 .modal-content {
   width: 75%;
 }
+
+.dynamic-type {
+  min-height:150px;
+}

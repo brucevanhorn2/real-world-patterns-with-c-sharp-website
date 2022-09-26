@@ -35,6 +35,10 @@
   width: 75%;
 }
 
+.message-body {
+  min-height: 270px;
+}
+
 .dynamic-type {
   min-height:150px;
 }

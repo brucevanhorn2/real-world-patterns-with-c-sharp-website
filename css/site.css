@@ -28,18 +28,14 @@
   margin: 0 auto;
 }
 
-.modal-close {
-  background-color: #f69423;
-}
-
-.modal-content {
-  width: 75%;
-}
-
 .message-body {
   min-height: 270px;
 }
 
 .dynamic-type {
   min-height:150px;
+}
+
+.source {
+  font-family: 'Source Sans Pro', sans-serif;
 }

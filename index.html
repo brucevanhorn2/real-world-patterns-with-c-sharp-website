@@ -10,6 +10,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/typing-effect.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <title>Real World Implementation of C# Design Patterns</title>
@@ -54,8 +57,9 @@
     </nav>
     <section class="section container">
       <div class="columns is-centered">
-        <h1 class="title is-2" style="margin: 32px 16px 16px 16px; text-align: center;">
-          Coming soon to only the finest purveyors of technical books!
+        <h1 class="title is-4" style="margin: 32px 16px 16px 16px; text-align: center;">
+          <p>Available in stores:</p>
+          <p class="countdown-mono" id="counter" />
         </h1>
       </div>
     </section>
@@ -71,6 +75,9 @@
         </h1>
       </div>
     </section>
+    <div style="text-align:center" class="is-hidden-tablet">
+      <i class="fa-duotone fa-chevrons-down"></i>    
+    </div>
     <section class="section container is-mobile">
       <div class="columns is-centered">
         <div class="column is-one-third">
@@ -85,7 +92,7 @@
           <h1 class="is-hidden-mobile title is-1" style="margin-bottom: 60px">
             Real World Implementation of C# Design Patterns
           </h1>
-          <h1 class="is-hidden-tablet title is-2" style="margin-bottom: 60px">
+          <h1 class="is-hidden-tablet title is-3" style="margin-bottom: 60px">
             Real World Implementation of C# Design Patterns
           </h1>
           <h2 class="subtitle is-3" style="margin-bottom: 80px">
@@ -916,5 +923,6 @@
     </script>
     <script src="./js/site.js"></script>
     <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>    
+    <script src="./js/yscountdown.min.js"></script>
   </body>
 </html>

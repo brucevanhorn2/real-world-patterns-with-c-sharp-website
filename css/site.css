@@ -33,9 +33,13 @@
 }
 
 .dynamic-type {
-  min-height:150px;
+  min-height:200px;
 }
 
 .source {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.countdown-mono {
+  font-family: 'Ubuntu Mono', monospace;
 }

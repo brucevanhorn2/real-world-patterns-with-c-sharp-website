@@ -43,3 +43,7 @@
 .countdown-mono {
   font-family: 'Ubuntu Mono', monospace;
 }
+
+.topSpacing {
+  margin-top:80px;
+}
